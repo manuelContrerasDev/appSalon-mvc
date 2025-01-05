@@ -360,12 +360,16 @@ async function reservarCita() {
         }
     } catch (error) {
         Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'Hubo un error al guardar la cita'
+            icon: 'success',
+            title: 'Cita Creada',
+            text: 'Tu cita fue creada correctamente',
+            button: 'OK'
+        }).then( () => {
+            setTimeout(() => {
+                window.location.reload();
+            }, 3000);
         })
     }
-
     
     // console.log([...datos]);
 
