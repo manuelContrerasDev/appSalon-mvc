@@ -1,6 +1,10 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+.contenedor__login {
+    padding: 7rem 2rem ;
+}
+
 .contenedor-app {
     @include m.tablet {
         display: grid;
