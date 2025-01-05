@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.boton {
+    @include m.boton(v.$azul, v.$blanco);
+    border-radius: 1rem;
+}
+.boton-eliminar {
+    @include m.boton(v.$rojo, v.$blanco);
+    border-radius: 1rem;
+}
+
+.boton-logout {
+    @include m.boton(v.$negro, v.$blanco);
+    border: solid ; 
+    border-radius: 1rem;
+}
